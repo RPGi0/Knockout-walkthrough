@@ -1,0 +1,11 @@
+<!-- This is a *view* - HTML markup that defines the appearance of your UI -->
+
+<p>First name: <strong data-bind="text: firstName">todo</strong></p> <!-- "data-bind:text" adds text to the DOM element -->
+<p>Last name: <strong data-bind="text: lastName">todo</strong></p>   
+
+<p>First name: <input data-bind="value: firstName" /></p> <!--"data-bind: value" inside the <input> allows us to -->
+<p>Last name: <input data-bind="value: lastName" /></p>   <!-- make the data editable -->
+
+<p>Full name: <strong data-bind="text: fullName"></strong></p> <!-- Displys the computed value of the fullName function -->
+
+<button data-bind="click: capatializeLastName">Go caps!</button>  
